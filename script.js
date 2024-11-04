@@ -23,9 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const addTaskToDom = (task) => {
     const li = document.createElement("li");
     li.textContent = task;
+    li.classList.add(
+      "list-group-item",
+      "m-1",
+      "px-2",
+      "border",
+      "border-danger-subtle",
+      "rounded",
+      "w-75",
+      "overflow-auto"
+    );
     const removeBtn = document.createElement("span");
     removeBtn.textContent = "❌";
-    removeBtn.classList.add("remove-btn");
+    removeBtn.classList.add("float-end");
 
     removeBtn.addEventListener("click", () => {
       toDoList.removeChild(li);
