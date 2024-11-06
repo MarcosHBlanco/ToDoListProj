@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const daysAgoText = calculateDaysAgo(createdAt);
     const taskText = document.createElement("span");
-    taskText.textContent = `created: ${daysAgoText}`;
+    taskText.textContent = ` created: ${daysAgoText}`;
     taskText.classList.add("opacity-25", "float-end");
 
     const removeBtn = document.createElement("span");
